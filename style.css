@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  
+}
+
+body {
+  background-color: #f0f0f0;
+ 
+}
+
+.maze {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+#settings {
+  position: absolute;
+  padding: 2rem;
+  top: 60%;
+  left: 50%;
+  width: 32%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 15px;
+  background-color: #1e1e1e;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+
+
+input[type="number"] {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  background-color: #1e1e1e;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+
+
+.complete {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  background: black;
+  z-index: 4;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  color: #0d0e0e;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  width: 100%; /* Set a fixed width */
+  height: 100%; /* Set a fixed height */
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  font-size: 1rem;
+  font-family: 'Bungee Inline', cursive;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex; /* Add this line */
+  justify-self: center;
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+}
+input[type="submit"]:hover {
+  background-color: #555;
+  color: #00d4ff;
+}
+
+.title {
+  position: absolute;
+  padding-bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  color: #000000;
+  font-family: "Bungee Inline", cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px #ffffff;
+  z-index: 3; /* Ensure the title stays on top */
+}
+.cent {
+   justify-items: center;
+}
+.dummy{
+  height: 10%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MazeGen</title>
+</head>
+<body>
+<div>
+    
+<h1 class="title">Maze Generator</h1>
+<div class="complete">
+    <h3>Maze Completed.</h3>
+    <!-- <button class="replay" id="replay" style="color: white; background-color: #16a085;">Play again</button>
+    <button class="close" id="close" style="color: white; background-color: #16a085;">Close</button> -->
+    </div>
+<div>
+<div id="dummy"><p></p></div>
+<form id="settings" action="">
+    <p>Maze Size</p>
+    <input id="size" type="number" value="500"/><br>
+    <p>Rows/Columns</p>
+    <input id="number" type="number" value="20"/><br>
+
+    <div id="cent">
+        <input id="Backtracking" type="submit" value="Backtracking Algorithm">
+    </div>
+    <div>
+        <input id="RecursiveDivision" type="submit" value="Recursive Division Algorithm">
+    </div>
+    <div>
+        <input id="Kruskals" type="submit" value="Kruskals's Algorithm">
+    </div>
+    <div>
+        <input id="BinaryTree" type="submit" value="Binary Tree Algorithm">
+    </div>
+    <div>
+        <input id="Prims" type="submit" value="Prim's Algorithm">
+    </div>
+    <div>
+        <input id="AldousBroder" type="submit" value="Aldous-Broder Algorithm">
+    </div>
+    
+    
+    <!-- <div>
+        <input id="Sidewinder" type="submit" value="Sidewinderer Algorithm">
+    </div> -->
+</form>
+</div>
+<canvas class="maze"></canvas>
+</div>
+<script src="maze.js"></script>
+<script src="settings.js"></script>
+</body>
+</html>
